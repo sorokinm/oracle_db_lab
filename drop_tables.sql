@@ -1,5 +1,12 @@
-DROP  TABLE stock ;
-DROP TABLE product;
+DROP TABLE stock ;
 DROP TABLE store;
 DROP TABLE review;
-DROP  TABLE address;
+DROP TABLE orderitem;
+DROP TABLE credit_card;
+DROP TABLE orders;
+DROP TABLE client;
+DROP TABLE product_supply;
+DROP TABLE supplier;
+DROP TABLE contacts;
+DROP TABLE address;
+DROP TABLE product;
