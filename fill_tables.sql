@@ -1,6 +1,9 @@
+﻿--INSERT INTO product ( product_name, description, price) 
+--	VALUES ('Гематоген', 'Шоколадный батончик', 15);
+
 INSERT INTO product ( product_name, description, price) 
 	VALUES ('Гематоген', 'Шоколадный батончик', 15);
-	
+
 INSERT INTO product ( product_name, description, price) 
 	VALUES ('Витаминки', 'Драже', 10);
 	
