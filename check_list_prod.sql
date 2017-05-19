@@ -1,0 +1,1 @@
+select list_st_prod(1) from dual;

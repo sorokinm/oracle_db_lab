@@ -12,7 +12,7 @@ t_prod_id product.product_id%TYPE;
 t_amount NUMBER;
 t_store_id store.store_id%TYPE;
 l_order_id orders.order_id%TYPE;
-l_total_price NUMBER;
+l_total_price NUMBER(15) := 0;
 l_prod_price product.price%TYPE;
 sysdt DATE;
 BEGIN

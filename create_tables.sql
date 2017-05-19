@@ -39,7 +39,7 @@ CREATE TABLE address (
 	city NVARCHAR2(100) NOT NULL,
 	street NVARCHAR2(100) NOT NULL,
 	building NVARCHAR2(110) NOT NULL,
-	zip NVARCHAR2(140) NOT NULL
+	zip NVARCHAR2(140)
 );
 ALTER  TABLE address ADD (CONSTRAINT address_pk PRIMARY KEY(address_id));
 
@@ -50,7 +50,9 @@ CREATE TABLE client (
 	address_id NUMBER(15),
 	CONSTRAINT client_addr_fk FOREIGN KEY (address_id) REFERENCES address(address_id),
 	first_name NVARCHAR2(140) NOT NULL,
-	last_name NVARCHAR2(140) NOT NULL
+	last_name NVARCHAR2(140) NOT NULL,
+	status NVARCHAR2(140) NOT NULL,
+	CONSTRAINT uniq_name UNIQUE (nickname)
 );
 ALTER  TABLE client ADD (CONSTRAINT client_pk PRIMARY KEY(client_id));
 
